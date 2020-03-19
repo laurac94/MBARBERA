@@ -1,0 +1,6 @@
+<%= simple_form_for @post do |f| %>
+ <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+ <%= f.association :category %>
+ <%= f.button :submit,  "Post" %>
+<% end %>
+
